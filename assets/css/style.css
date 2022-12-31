@@ -4,28 +4,40 @@ body
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
 }
 
 .website_header
 {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding: 2%;
+    padding: 1%;
+    border-bottom: groove;
 }
+
+/* Need to float elements to the right and add gap */
 
 #nav
 {
     float: right;
-    position: absolute;
-    gap: 3%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+.fa-face-hand-peeking
+{
+    color: green;
 }
 
-main
+.box 
 {
-    width: 50%;
+    width: 60%;
+    background-color: white;
+    padding: 5%;
     margin: auto;
+}
 
+.main_box
+{
+    visibility: visible;
 }
 
 .heading
@@ -56,7 +68,7 @@ main
     color: white;
     border: 1px transparent;
     margin: 3%;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 125px;
     height: 55px;
     text-transform: uppercase;
@@ -68,4 +80,9 @@ main
 .btn--start:hover
 {
     cursor: pointer;
+}
+
+.question_box
+{
+    visibility: hidden;
 }
