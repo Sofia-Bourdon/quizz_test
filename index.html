@@ -14,22 +14,28 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="website_header">
+
         <!-- add logo here -->
-        <nav>
-            <a aria-label="Sign-in">Sign in</a>
+
+        <nav id="nav">
+            <a id="sign-in" aria-label="Sign-in">Sign in</a>
             <i class="fa-solid fa-magnifying-glass"></i>
         </nav>
     </header>
     <main>
-        <h1>Do you consider yourself a foodie? Take this Quiz and find out how many of these foods you get right!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem enim ea animi. Quasi minus provident ad, numquam quia natus molestias, eligendi vero nihil ipsa similique ut perferendis beatae quam iure.</p>
+        <div class="heading">
+            <h1 id="heading_h1">Do you consider yourself a foodie? Take this Quiz and find out how many of these foods you get right!</h1>
+            <p>Small paragraph explaining the quiz and how it tests your hability</p>
+        </div>
         <img id="foodie_1" src="assets/images/Foodie-1.jpeg" alt="Food table">
 
 
      <!-- Start Quiz button -->
-        <h2>Ready... SET</h2>
-        <button data-type="submit" class="btn btn--start">Start</button>
+        <div class="start-btn-area">
+            <h2>Ready... SET</h2>
+            <button data-type="submit" class="btn btn--start">Start</button>
+        </div>
     </main>
     <script src="assets/js/script.js"></script>
 </body>
