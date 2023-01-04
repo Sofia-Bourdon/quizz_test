@@ -31,11 +31,12 @@ body
 {
     width: 60%;
     background-color: white;
+    box-shadow: 3px 3px 3px 3px #ccc;
     padding: 5%;
     margin: auto;
 }
 
-.main_box
+.start_box
 {
     visibility: visible;
 }
@@ -77,12 +78,34 @@ body
     font-size: larger;
 }
 
-.btn--start:hover
+.btn:hover
 {
     cursor: pointer;
 }
 
 .question_box
 {
-    visibility: hidden;
+    width: 60%;
+    height: 100%;
+}
+
+.img_question
+{
+    max-width: 60%;
+}
+
+.grid
+{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px 50px;
+    margin: 30px;
+}
+
+.option-button
+{
+    font-weight: 700;
+    font-size: medium;
+    padding: 3%;
 }
