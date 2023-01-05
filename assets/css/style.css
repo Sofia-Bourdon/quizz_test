@@ -127,3 +127,52 @@ body
     align-items: center;
     flex-direction: column;
 }
+
+#score-text
+{
+    font-weight: 400;
+    font-size: larger;
+}
+
+.control-btn
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-button
+{
+    background-color: #0091ea;
+    color: white;
+    border: 1px transparent;
+    margin: 3%;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.quit-button
+{
+    background-color: #cfd8dc;
+    color: black;
+    border: 1px transparent;
+    margin: 3%;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight:bold;
+    font-size:medium;
+
+}
+
+span
+{
+    font-weight: bold;
+}
