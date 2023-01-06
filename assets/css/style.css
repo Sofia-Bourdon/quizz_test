@@ -3,7 +3,15 @@ body
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+main
+{
+     /* testing centering all items ans hiding with js
+     display: flex;
+     justify-content: center;
+     align-items: center 
+     */
 }
 
 .website_header
@@ -85,6 +93,23 @@ body
 {
     cursor: pointer;
     border: 1.5px solid black;
+}
+
+.btn.correct
+{
+    background-color: rgb(124, 187, 124);
+    color: darkgreen;
+}
+
+.btn.wrong
+{
+    background-color: rgb(248, 69, 69);
+    color: darkred;
+}
+
+.hide
+{
+    display: none;
 }
 
 .question_box
