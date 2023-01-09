@@ -5,15 +5,6 @@ body
     padding: 0;
 }
 
-main
-{
-     /* testing centering all items ans hiding with js
-     display: flex;
-     justify-content: center;
-     align-items: center 
-     */
-}
-
 .website_header
 {
     max-width: 100%;
