@@ -1,77 +1,87 @@
-const startButton = document.getElementById('start-btn')
-let startBox = document.getElementById('start-box')
-let questionBox = document.getElementsByClassName('question_box')
-let resultBox = document.getElementById('result_box')
+const startButton = document.getElementById('start-btn');
+let resultBox = document.getElementById('result-box')
 
-startButton.addEventListener('click', startGame)
+if (startButton){
 
-function startGame(){
+  startButton.addEventListener('click', startGame)
+
+  function startGame(){
     console.log("quiz started");
     window.location.href = "quiz.html";
+  }
 }
 
-const QUESTIONS = [
-    {
-      id: 1,
-      questionText: 'Can you name this vegetable?',
-      options: [
-        'Amaranth',
-        'Romanesco',
-        'Oca',
-        'Nopal'
-      ],
-      correctAnswer: 'Romanesco'
-    },
-    {
-      id: 2,
-      questionText: 'What is this dish called?',
-      options: [
-        'Lo Mein',
-        'Udon soup',
-        'Pho',
-        'Beef Ramen'
-      ],
-      correctAnswer: 'Pho'
-    },
-    {
-      id: 3,
-      questionText: 'Which cut is this?',
-      options: [
-        'Ribeye',
-        'Sirloin',
-        'Rump steak',
-        'Porterhouse'
-      ],
-      correctAnswer: 'Ribeye'
-    },
-    {
-        id: 4,
-        questionText: 'What is this fruit called?',
+  const QUESTIONS = [
+      {
+        questionText: 'Can you name this vegetable?',
         options: [
-          'Blueberry',
-          'Acai',
-          'Boysenberry',
-          'Elderberry'
+          'Amaranth',
+          'Romanesco',
+          'Oca',
+          'Nopal'
         ],
-        correctAnswer: 'Acai'
+        correctAnswer: 'Romanesco'
       },
       {
-        id: 5,
         questionText: 'What is this dish called?',
         options: [
-          'Mille-feuille',
-          'Clafoutis',
-          'Rum cake',
-          'Baklava'
+          'Lo Mein',
+          'Udon soup',
+          'Pho',
+          'Beef Ramen'
         ],
-        correctAnswer: 'Baklava'
-      }
-  ];
+        correctAnswer: 'Pho'
+      },
+      {
+        questionText: 'Which cut is this?',
+        options: [
+          'Ribeye',
+          'Sirloin',
+          'Rump steak',
+          'Porterhouse'
+        ],
+        correctAnswer: 'Ribeye'
+      },
+      {
+          questionText: 'What is this fruit called?',
+          options: [
+            'Blueberry',
+            'Acai',
+            'Boysenberry',
+            'Elderberry'
+          ],
+          correctAnswer: 'Acai'
+        },
+        {
+          questionText: 'What is this dish called?',
+          options: [
+            'Mille-feuille',
+            'Clafoutis',
+            'Rum cake',
+            'Baklava'
+          ],
+          correctAnswer: 'Baklava'
+        }
+    ];
+
+  const nextButton = getElementById("next-btn");
+  const quitButton = getElementById("quit-btn");
+
+  function showQuestion(){
+
+  // replacing the question text content
+    let questionElement = document.getElementById('question');
+    questionElement.textContent = QUESTIONS[0].questionText;
   
-function setQuestion(){
+  // replacing the options content with the content inside the array 
+    let optionButtons = document.querySelectorAll('.option-button');
+    optionButtons.forEach(function(element, index){
+      element.textContent = QUESTIONS[0].options[index];
+    })
+  }
 
-}
+  function selectAnswer(){
 
-function selectAnswer(){
+  }
 
-}
+  showQuestion();
