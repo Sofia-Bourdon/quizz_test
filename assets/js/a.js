@@ -6,5 +6,4 @@ function startGame(){
   window.location.href = "quiz.html";
 }
 
-
 startButton.addEventListener('click', startGame);

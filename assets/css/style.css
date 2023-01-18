@@ -10,7 +10,7 @@ body
     width: 60%;
     background-color: white;
     box-shadow: 3px 3px 3px 3px #ccc;
-    padding: 25px 50px 35px 50px;
+    padding: 35px;
     margin: auto;
 }
 
@@ -56,18 +56,6 @@ body
 {
     cursor: pointer;
     border: 1.5px solid black;
-}
-
-.btn.correct
-{
-    background-color: rgb(124, 187, 124);
-    color: darkgreen;
-}
-
-.btn.wrong
-{
-    background-color: rgb(248, 69, 69);
-    color: darkred;
 }
 
 .hide
