@@ -78,9 +78,12 @@ const QUESTIONS = [
 
   function onOptionClick(event){
     console.log("answer selected");
+    const correctOption = QUESTIONS[currentQuestionIndex].correctAnswer;
+    console.log(correctOption)
+    disableButtons();
     const selectedAnswer = event.target.textContent;
     // Also check if answer is correct
-    if (selectedAnswer ===  QUESTIONS[currentQuestionIndex].correctAnswer) {
+    if (selectedAnswer ===  correctOption) {
     // Increment the score
       console.log("Correct");
       alert("You got it right!! That was a tough one!");
@@ -90,11 +93,23 @@ const QUESTIONS = [
       console.log("Incorrect");
       alert("AWW that was the wrong one... You'll get it right next time!");
       this.style.backgroundColor = "rgb(248, 69, 69)";
+      displayRightAnswer(correctOption);
+    }
+    disableButtons();
+  }
+
+  function displayRightAnswer(correctOption)
+  {
+    for (let i = 0; i < optionButtons.length; i++){
+      if (optionButtons[i].innerHTML == correctOption){
+        optionButtons[i].style.backgroundColor = "rgb(124, 187, 124)"
+      }
     }
   }
   
   function onNextClick(){
     currentQuestionIndex++;
+    enableButtons();
     if(currentQuestionIndex < QUESTIONS.length){
       showQuestion();
     } else{
@@ -112,7 +127,6 @@ const QUESTIONS = [
     for (let i = 0; i < optionButtons.length; i++) {
       optionButtons[i].addEventListener('click', onOptionClick);
     }
-    
     nextButton.addEventListener('click', onNextClick);
     console.log("Event listeners initialized");
     
@@ -138,4 +152,18 @@ const QUESTIONS = [
     console.log("result ready!");
     resultBox.classList.remove('hide');
     resultBox.classList.add('result_box');
+  }
+
+  function disableButtons()
+  {
+      for (let i = 0; i < optionButtons.length; i++){
+        optionButtons[i].disabled = true;
+      }           
+  }
+
+  function enableButtons()
+  {
+      for (let i = 0; i < optionButtons.length; i++){
+        optionButtons[i].disabled = false;
+      }           
   }

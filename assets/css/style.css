@@ -156,3 +156,17 @@ span
 {
     max-width: 80%;
 }
+
+@media all and (max-width: 768px){
+
+    .box
+    {
+        box-shadow: none;
+    }
+
+
+    #question
+    {
+        text-align: center;
+    }
+}
