@@ -12,7 +12,7 @@ const QUESTIONS = [
       },
       {
         questionText: 'What is this dish called?',
-        image : "assets/images/Vietnamese-Pho.jpeg",
+        image : "assets/images/vietnamese-pho.jpeg",
         options: [
           'Lo Mein',
           'Udon soup',
@@ -34,7 +34,7 @@ const QUESTIONS = [
       },
       {
           questionText: 'What is this fruit called?',
-          image: 'assets/images/Acai-Berries.jpeg',
+          image: 'assets/images/acai-berries.jpeg',
           options: [
             'Blueberry',
             'Acai',
@@ -94,7 +94,6 @@ const QUESTIONS = [
   }
   
   function onNextClick(){
-    console.log("next question ready!");
     currentQuestionIndex++;
     if(currentQuestionIndex < QUESTIONS.length){
       showQuestion();
@@ -113,8 +112,9 @@ const QUESTIONS = [
     for (let i = 0; i < optionButtons.length; i++) {
       optionButtons[i].addEventListener('click', onOptionClick);
     }
+    
     nextButton.addEventListener('click', onNextClick);
-    console.log("Event listeners initialized")
+    console.log("Event listeners initialized");
     
     quitButton.forEach(function (i) {
       i.addEventListener('click', onQuitClick);

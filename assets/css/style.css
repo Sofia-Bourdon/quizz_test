@@ -2,7 +2,6 @@ body
 {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 .box 
@@ -151,4 +150,9 @@ body
 span
 {
     font-weight: bold;
+}
+
+#gif 
+{
+    max-width: 80%;
 }
