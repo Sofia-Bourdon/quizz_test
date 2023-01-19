@@ -71,7 +71,7 @@ const QUESTIONS = [
     questionElement.textContent = QUESTIONS[currentQuestionIndex].questionText;
     image.src = QUESTIONS[currentQuestionIndex].image;
     optionButtons.forEach(function(element, index){
-    element.style.backgroundColor = "aliceblue"
+    element.style.backgroundColor = "aliceblue";
     element.textContent = QUESTIONS[currentQuestionIndex].options[index];
     });
   }
@@ -79,7 +79,7 @@ const QUESTIONS = [
   function onOptionClick(event){
     console.log("answer selected");
     const correctOption = QUESTIONS[currentQuestionIndex].correctAnswer;
-    console.log(correctOption)
+    console.log(correctOption);
     disableButtons();
     const selectedAnswer = event.target.textContent;
     // Also check if answer is correct
@@ -102,7 +102,7 @@ const QUESTIONS = [
   {
     for (let i = 0; i < optionButtons.length; i++){
       if (optionButtons[i].innerHTML == correctOption){
-        optionButtons[i].style.backgroundColor = "rgb(124, 187, 124)"
+        optionButtons[i].style.backgroundColor = "rgb(124, 187, 124)";
       }
     }
   }
@@ -113,7 +113,7 @@ const QUESTIONS = [
     if(currentQuestionIndex < QUESTIONS.length){
       showQuestion();
     } else{
-      questionBox.style.display = "none"
+      questionBox.style.display = "none";
       displayResultBox();
     }
   }
