@@ -50,9 +50,6 @@ The site consists of a start Page, a quiz page and a score box.
   <img width="832" alt="Screenshot 2023-01-19 at 21 06 52" src="https://user-images.githubusercontent.com/112895499/213589411-298774f2-c490-4e20-a240-c944650fd2c1.png">
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
-
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
   - From the source section drop-down menu, select the Master Branch
