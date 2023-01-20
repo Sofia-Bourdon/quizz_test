@@ -1,108 +1,81 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Quiz Test
 
-Welcome Sofia-Bourdon,
+Quiz test is a site where the user can play a quiz game and test their knowledge on uncommon fruits, vegetables and dishes. This is a fully responsive website that allow users to choose between 4 answer options per question, Jump to a new question by clicking a next button and find out their final score at the end.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<img width="1317" alt="Screenshot 2023-01-19 at 21 02 25" src="https://user-images.githubusercontent.com/112895499/213589027-43e947cb-faa5-42c0-b3a5-d5dc01ae8fc9.png">
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features 
 
-## Gitpod Reminders
+The site consists of a start Page, a quiz page and a score box.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Existing Features
 
-`python3 -m http.server`
+- __The Start Page__
 
-A blue button should appear to click: _Make Public_,
+<img width="1512" alt="Screenshot 2023-01-19 at 20 56 24" src="https://user-images.githubusercontent.com/112895499/213589077-bea56366-e9b8-4d15-993d-6d48a21ec49d.png">
 
-Another blue button should appear to click: _Open Browser_.
+  - Being the first feature displayed once the page loads, the start page introduces the user to the quiz and displays a start button that initiates the quiz game. The start box contains all of the content of the start page, constituting a header, a small paragraph, an image and the start button.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- __The Quiz Page__
 
-A blue button should appear to click: _Make Public_,
+<img width="1512" alt="Screenshot 2023-01-19 at 20 57 10" src="https://user-images.githubusercontent.com/112895499/213589117-387c2133-a39e-4fd7-bd4b-c571cac37d64.png">
 
-Another blue button should appear to click: _Open Browser_.
+  - This section will allow the user to participate in the quiz. It contains a question, an image of the food mentioned and 4 option buttons that contain the possible answer to the question, a next button and a quit button.
+  - The user will be able to select the option button and get a response from the site that informs if the answer selected was right or wrong. When the right option is selected an alert will appear on the screen and It's color will change to green. If the wrong button is selected, the response will be similar but the button selected will change to a red color and the right answer will be displayed in green (to inform the user of the correct answer).
+  - When the next button is clicked, a new question will be displayed, followed by new option buttons and an image.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __The Score Area__
 
-To log into the Heroku toolbelt CLI:
+<img width="925" alt="Screenshot 2023-01-19 at 20 57 49" src="https://user-images.githubusercontent.com/112895499/213589164-dd3f7984-b13b-4188-807a-2c7644b61a35.png">
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  - This section will display the score. How many answers out of the total number the user guessed right.
+  - It constitutes of a header, an animated gif, a small text with the core number and a quit button.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+### Validator Testing 
 
-## Release History
+- HTML
+    - No errors were returned when passing through the official W3C validator.
+- CSS
+    - No errors were found when passing through the official Jigsaw) validator.
+- JavaScript
+    - No errors were found when passing through the official Jshint but 17 warnings were displayed.
+      - The following metrics were returned: 
+        - There are 14 functions in this file.
+        - Function with the largest signature take 2 arguments, while the median is 0.
+        - Largest function has 15 statements in it, while the median is 2.5.
+        - The most complex function has a cyclomatic complexity value of 3 while the median is 1.
+- Lighthouse and accesibility
+  - This website scored:
+  <img width="832" alt="Screenshot 2023-01-19 at 21 06 52" src="https://user-images.githubusercontent.com/112895499/213589411-298774f2-c490-4e20-a240-c944650fd2c1.png">
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Deployment
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Credits 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Many of the features included on this project and how they were brought to life were inspired by:
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Youtube tutorials: 
+- https://youtu.be/WUBhpSRS_fk
+- https://youtu.be/pQr4O1OITJo
+- https://youtu.be/riDzcEQbX6k
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Mentor guidance and help: 
+- Mentor Akshat Garg helped building functions, creating the QUESTIONS array and structuring some of the code. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Tutor support:
+- Tutors from Code institute helped call the functions and implement features such as: desabling the option buttons after one is clicked, displaying the correct answer when the wrong one is clicked etc.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Media
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- The photos used on the start page and quiz page were taken from Google images.
+- The Gif used on the score box was also taken from google images.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
